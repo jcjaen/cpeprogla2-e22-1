@@ -17,7 +17,7 @@ int myStrCmp(char* str1, char* str2){
      break;
  };
 }
-void mystrcmp(char* str1, char* str2){
+void myStrcpy(char* str1, char* str2){
 	strcpy(str1, str2);
 }
 
@@ -28,6 +28,6 @@ int main(){
   //cout << myStrCmp(str1, str2);
 
 myStrCmp(str1, str2);
-myStrCmp(str1, str2);
+myStrcpy(str1, str2);
 cout<<str1;
 }
