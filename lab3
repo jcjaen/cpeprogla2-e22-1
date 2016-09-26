@@ -1,0 +1,83 @@
+//problem 1
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main(){
+
+//declare two strings
+char str1[100];
+char str2[100];
+//get user input of strings:
+cout << "Please enter the first string\n";
+cin >> str1;
+cout << "Please enter the second string\n";
+cin >> str2;
+//compare strings
+int result = strcmp(str1, str2);
+if (result == 0)
+{
+	//strings are equals
+	cout << "Equal";
+}
+else
+{
+	if (result > 0)//str1 is greater
+		cout << " Positive ";
+	else//str2 is greater
+		cout << " Negative ";
+}
+}
+
+//problem 2
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main ()
+{
+	//char str1, str2;
+   char str1[10];
+   char str2[10];
+   //int  main ;
+   cout<<"Enter First"<<endl;
+   cin>>str1;
+    cout<<"Enter second"<<endl;
+   cin>>str2;
+
+   // copy str1 into str3
+   strcpy( str1, str2);
+   cout<< "New Value for str1: "<<str2<<endl;
+
+   // concatenates str1 and str2
+   /*strcat( str1, str2);
+   cout << "strcat( str1, str2): " << str1 << endl;*/
+
+   // total lenghth of str1 after concatenation
+   /*len = strlen(str1);
+   cout << "strlen(str1) : " << len << endl;*/
+
+   return 0;
+}
+
+//Problem 3
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char *string1 = new char[30];
+    char *string2 = new char[30];
+    cout<<"Enter string one(without spaces): ";
+    cin>>string1;
+    cout<<"Enter string two(without spaces): ";
+    cin>>string2;
+    cout<<strcat(string1, " ");
+    cout<<strcat(string1, string2);
+    //cout<<strcat(s1, "" s2);
+    //strcat(strcat(s1, " "),s2);
+    
+}
